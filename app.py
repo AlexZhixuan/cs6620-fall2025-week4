@@ -15,7 +15,7 @@ def multiply(a, b):
 
 def divide(a, b):
     """Divide two numbers"""
-    if b==0:
+    if b == 0:
         raise ValueError("Cannot divide by zero")
     return a/b
 
@@ -32,7 +32,7 @@ def calculate(operation, num1, num2):
         result = divide(num1, num2)
     else:
         raise ValueError(f"Unknown operation: {operation}")
-    
+
     return result
 
 
@@ -47,5 +47,5 @@ if __name__ == "__main__":
     print(f"7 * 3 = {result2}")
 
     unused_variable = "This variable is never used"
-    
+
     print("Calculator completed successfully!")
